@@ -1,0 +1,12 @@
+<div class="mx-auto" style="width: 800px;">
+    <h1 class="display-1">Your result</h1>
+
+    <ul class="list-group">
+    <li class="list-group-item">Attempt: <%= @attempt%></li>
+    <li class="list-group-item">Time: <%= @result[:time]%></li>
+    <li class="list-group-item">Message: <%= @result[:message]%></li>
+    <li class="list-group-item">Score: <%= @result[:score]%></li>
+    </ul>
+
+    <%= link_to("Restart", new_path) %>
+</div>
